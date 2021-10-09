@@ -24,7 +24,7 @@ public class CustomerFormController {
                 txtAddress.getText(),
                 Double.parseDouble(txtAddress.getText())
         );
-
+        //
         try {
             if (new CustomerController().addCustomer(c1)){
                 new Alert(Alert.AlertType.CONFIRMATION, "Saved").show();
