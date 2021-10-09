@@ -1,10 +1,10 @@
 package lk.ijse.ThogaKade.controller;
 
-import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import lk.ijse.ThogaKade.model.Item;
 
+import java.awt.event.ActionEvent;
 import java.sql.SQLException;
 
 /**
@@ -25,8 +25,7 @@ public class ItemFormController {
                 Integer.parseInt(txtqtyOnHand.getText())
 
         );
-
-
+        //
         try {
             if (new ItemController().addItem(i1)){
                 new Alert(Alert.AlertType.CONFIRMATION, "Saved").show();
